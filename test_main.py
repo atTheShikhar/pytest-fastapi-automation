@@ -19,7 +19,7 @@ test_creds = LoginCreds()
 
 def test_root():
     resp = client.get("/")
-    assert resp.status_code == 200
+    assert resp.status_code == 201
     assert resp.json() == {"message": "Hello"}
 
 def test_valid_login():
